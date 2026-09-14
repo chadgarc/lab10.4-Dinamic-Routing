@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router'
-import NavBar from './components/Header/NavBar.tsx'
+import {Layout} from './components/Layout/Layout.tsx'
 import {Blog} from './pages/Blog.tsx'
 import {Admin} from './pages/Admin.tsx'
 import {Login} from './pages/Login.tsx'
