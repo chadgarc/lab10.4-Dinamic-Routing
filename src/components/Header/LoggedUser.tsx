@@ -16,7 +16,7 @@ export function LoggedUser(){
                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                 <li>
                 <a className="justify-between">
-                    Profile
+                    {isAuth ? <li><Link to="/admin">Account Settings</Link></li> : <li><Link to="/login">Account Settings</Link></li>}
                 </a>
                 </li>
                 {/* <li><a>Settings</a></li> */}
