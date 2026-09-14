@@ -3,7 +3,7 @@ import { AuthContext } from "../../hooks/Contexts/AuthContext";
 import { Link } from "react-router";
 
 export function LoggedUser(){
-    const {isAuth, logout, login} = useContext(AuthContext)
+    const {isAuth, logout} = useContext(AuthContext)
 
     return(
         <div className="dropdown dropdown-end">
@@ -20,7 +20,7 @@ export function LoggedUser(){
                 </a>
                 </li>
                 {/* <li><a>Settings</a></li> */}
-                {isAuth ? <li><Link to="/login">Logout</Link></li> 
+                {isAuth ? <li><Link to="/login" onClick={logout}>Logout</Link></li> 
                     : <li><Link to="/login">Login</Link></li>}
             </ul>
         </div>
