@@ -1,8 +1,13 @@
-
+import { AuthProvider } from "./CustomHooks/AuthContext.tsx";
+import { DataProvider } from "./CustomHooks/DataContext.tsx";
 
 export default function Providers({ children })
     {
         return(
-            children
+            <AuthProvider>
+                <DataProvider>
+                    {children}
+                </DataProvider>
+            </AuthProvider>
         )
 }
