@@ -14,11 +14,7 @@ export function LoggedUser(){
             <ul
                 tabIndex={-1}
                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                <li>
-                <a className="justify-between">
-                    {isAuth ? <li><Link to="/admin">Account Settings</Link></li> : <li><Link to="/login">Account Settings</Link></li>}
-                </a>
-                </li>
+                {isAuth ? <li><Link to="/admin">Account Settings</Link></li> : <li><Link to="/login">Account Settings</Link></li>}
                 {/* <li><a>Settings</a></li> */}
                 {isAuth ? <li><Link to="/login" onClick={logout}>Logout</Link></li> 
                     : <li><Link to="/login">Login</Link></li>}
