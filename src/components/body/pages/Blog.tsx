@@ -1,7 +1,7 @@
 import { useData } from "../../../hooks/Contexts/DataContext.ts";
 import type { Post, User } from "../../../types";
 import { BlogPost } from "../elements/BlogPost.tsx";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 export function Blog(){
     const { posts, users } = useData();

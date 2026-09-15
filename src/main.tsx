@@ -3,14 +3,14 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import Providers from './hooks/Providers.tsx'
 import App from './App.tsx'
-import { BrowserRouter } from 'react-router'
+import { HashRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Providers>
         <App />
       </Providers>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>,
 )

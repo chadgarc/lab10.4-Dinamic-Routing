@@ -1,4 +1,4 @@
-import { Link } from "react-router"
+import { Link } from "react-router-dom"
 import { LoggedUser } from "./LoggedUser"
 
 export default function NavBar()
@@ -7,7 +7,7 @@ export default function NavBar()
             <>
             <div className="navbar bg-base-100 shadow-sm">
                 <div className="flex-1 flex justify-start">
-                    <Link to="/blog"><a className="btn btn-ghost text-xl">Lab 10.4 - Dynamic Routing</a></Link>
+                    <Link to="/blog"><div className="btn btn-ghost text-xl">Lab 10.4 - Dynamic Routing</div></Link>
                 </div>
                 <div className="flex gap-2">
                     <LoggedUser />
