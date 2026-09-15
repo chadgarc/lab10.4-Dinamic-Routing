@@ -26,3 +26,5 @@ export interface AuthContextType {
     login: () => void,
     logout: () => void
 }
+
+export interface ProviderProps{ children: React.ReactNode }
