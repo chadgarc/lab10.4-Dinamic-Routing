@@ -1,5 +1,7 @@
 # Blog App — Lab 10.4
 
+The site is hosted [here](https://chadgarc.github.io/lab10.4-Dinamic-Routing/).
+
 ## About
 
 This project is part of a Per Scholas lab focused on **React Router, client-side authentication, and protected routes**. The application demonstrates dynamic routing, React Context for state management, and animated page transitions.
@@ -21,6 +23,10 @@ This lab presented a meaningful challenge, particularly with **React Context**. 
 Implementing **slugs** and dynamic routes (`/blog/:slug`) was more approachable and a good exercise in reading URL parameters with `useParams()`.
 
 Overall, the lab was a great way to deepen understanding of React patterns. It was very interesting to see how routing, context, and conditional rendering come together in a single cohesive application.
+
+## Deployment Note
+
+This project uses **HashRouter** instead of BrowserRouter. Since GitHub Pages serves static files and does not handle client-side routing with direct URLs (e.g., `/blog/my-post`), `HashRouter` uses URL hashes (`/#/blog/my-post`) to ensure all routes resolve correctly on static hosting.
 
 ## Stack
 
@@ -48,7 +54,7 @@ Overall, the lab was a great way to deepen understanding of React patterns. It w
 ```
 src/
 ├── App.tsx                  # Router setup, ProtectedRoute
-├── main.tsx                 # Entry point with BrowserRouter + Providers
+├── main.tsx                 # Entry point with HashRouter + Providers
 ├── index.css                # Tailwind/DaisyUI styles
 ├── data/
 │   └── data.ts              # Mock posts (30) and users (29)
